@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: 'Geologica', sans-serif;
+}
+
+header{
+    
+    background-image: linear-gradient(45deg,rgb(226, 226, 226) 13%,rgb(0, 73, 141));
+    height: 100px;
+    padding: 25px 30px;
+    
+}
+.container{
+    overflow: visible;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    justify-items: center;
+}
+
+h1{
+    color: rgb(0, 73, 141)
+}
+
+img {
+    width: 100%;
+  }
+  
+  /* No styling on list items */
+  li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+   
+    
+  }
+
+a{
+    color: #fff;
+    text-decoration: none;
+    
+}
+header .container .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menübar{
+ display: none;
+}
+
+.logo img{
+    width: 70px;
+    padding-right: 20px;
+   
+}
+.logo a{
+    display: flex;
+    align-items: center;
+   
+}
+
+
+/* Aside */
+
+
+aside{
+    height: auto;
+    background-image: url(images/AsideBackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    
+    
+}
+
+aside .grid{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+
+
+.nav ul li:hover a{
+    
+    color: #202020;
+    transition: 0.6s;
+    
+}
+
+.grid-item-1{
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item-1 button{
+    background-image: linear-gradient(45deg,rgb(0, 41, 66),rgb(9, 140, 192));
+    width: 200px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    
+
+
+    transition: 0.5s;
+    display: inline;
+   
+}
+.grid-item-1 button a{ 
+    font-size: 30px;
+    font-family: 'DM Sans', sans-serif;
+   
+}
+
+
+
+.grid-item-1 h2{ 
+    
+    font-size: 50px;
+    margin-top: 50px;
+    padding: 20px 20px;
+    color: #fff;
+    text-shadow: 2px 3px 13px black;
+}
+.grid-item-1 h4{ 
+    
+    font-size: 30px;
+    margin-top: 0px;
+    padding: 20px 20px;
+    color: #f4f4f3;
+    text-shadow: 2px 3px 13px black;
+}
+
+.grid-item-1 button:hover{
+    background-image: -webkit-linear-gradient(60deg,rgb(3, 114, 35),rgb(27, 160, 96));
+    border: 2px solid #fff;
+    cursor: pointer;
+  }
+.material-symbols-outlined{
+    font-size: 36px;
+    align-items: center;
+    text-align: center;
+   color: #fff;
+}
+
+/* Grid-item-2 */
+
+.grid-item-2{
+    align-items: center;
+    justify-items: center;
+}
+.grid-item-2 .computer{
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Section */
+
+section .grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 30px 30px;
+    
+}
+section .card{
+    margin: 20px 50px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.card h3{
+    color: rgb(4, 93, 189);
+}
+
+.card p{
+    margin-top: 20px;
+}
+
+.btndahafazla{
+    background-image: linear-gradient(rgb(29, 75, 156),rgb(27, 111, 196));
+    width: 120px;
+    height: 40px;
+    margin: 20px 20px;
+    border: 1px solid #272727;
+    border-radius: 4px;
+    
+}
+.btndahafazla a{
+   padding: 10px 20px;
+   font-size: 15px;
+}
+.btndahafazla a:hover{
+    padding: 10px 20px;
+    font-size: 15px;
+    color: rgb(34, 34, 34);
+    transition: 0.4s;
+ }
+
+
+ /* Footer */
+ 
+
+footer {
+    background-color: rgb(35, 35, 35);
+    padding: 20px 10px;
+    margin-top: 150px;
+    
+  }
+  footer a {
+    color: white;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    color: #0656ac;
+    border-bottom: 2px solid #00529e;
+    padding: 10px auto;
+  }
+  .links ul{
+    margin: 30px auto;
+    justify-content: space-around;
+  
+    display: flex;
+    
+  }
+
+footer .grid{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+}
+
+
+@media (max-width:1048px) {
+
+
+
+    aside .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        justify-items: center;
+    }
+
+    section .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 30px 30px;
+        
+    }
+
+    footer .grid{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
+
+.nav{
+    display: none;
+}
+.menübar{
+    display: inline-block;
+   }
+}
